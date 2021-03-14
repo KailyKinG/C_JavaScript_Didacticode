@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Variables En JavaScript</title>
+
+	</head>
+
+	<body>
+
+		<p id="parrafo1"></p>
+		<p id="parrafo2"></p>
+		<p id="parrafo3"></p>
+		<p id="parrafo4"></p>
+		<p id="parrafo5"></p>
+
+		<script>
+			/* VARIABLES EN JAVASCRIPT
+			-Identificadores Unicos
+			-Recomendable utilizar identificadores descriptivos.
+			-Empieza por letra, $, _ y siguen con letra, numero, $ o_.
+			-Pueden Contener Cadenas ("", '',) Y Numeros (enteros o decimales)
+			-Son Sencibles a las mayusculas (nombre != NOMBRE != Nombre)
+			-No pueden utilizarce palabras reservadas */ 
+
+				// Declaracion De Variable
+				var nombre;
+
+				//Mostramos El valor de la variable (undefine)
+				document.getElementById("parrafo1").innerHTML = nombre;	
+			
+				//Asignacion de valor a una variable
+				nombre = "Ada";
+
+				//Mostramos el valor de la variable
+				document.getElementById("parrafo2").innerHTML= nombre; 	
+
+				//Declaracion  de Variables en una sola sentencia
+				//var pais, nacimiento;	
+
+				var pais = "Reino Unido", 
+			        nacimiento = 1815;	
+
+				//Asignacion de Operaciones a una variable
+				var nombreApellido = "Ada"+" "+"Lovelace";
+				var fallecimiento = nacimiento + 37;
+				
+				document.getElementById("parrafo3").innerHTML = nombreApellido+" nacio en "+pais+" en "+nacimiento+" y murio en "+fallecimiento;
+			
+				function Nota(nombreApellido, pais, nacimiento, fallecimiento){
+					return document.getElementById("parrafo4").innerHTML = nombreApellido+" nacio en "+pais+" en "+nacimiento+" y murio en "+fallecimiento;
+				}
+				Nota("Tetona"+" "+"Emier...", "LibreSoyLand", 1650, 1650+700);
+			
+		</script>
+		
+
+			
+
+			
+	
+
+			
+			
+	</body>
+
+</html>
